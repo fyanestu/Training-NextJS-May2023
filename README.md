@@ -1,3 +1,5 @@
+# Training Mega - Next JS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -36,3 +38,46 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+## Requirement
+
+- Node JS v16
+- Fake API (<https://jsonplaceholder.typicode.com/posts>)
+
+---
+
+## Day 1 - Installation and Basic Setup
+
+```sh
+npx create-next-app@latest training-bankmega-nextjs
+cd training-bankmega-nextjs
+
+√ Would you like to use TypeScript with this project? ... No
+√ Would you like to use ESLint with this project? ... No
+√ Would you like to use Tailwind CSS with this project? ... Yes
+√ Would you like to use `src/` directory with this project? ... No
+√ Use App Router (recommended)? ... No
+√ Would you like to customize the default import alias? ... Yes
+√ What import alias would you like to configured? ... @app/*
+
+# Path alias akan tersimpan di file ./jsconfig.json
+
+# Installing sass
+npm install sass
+
+# Buat folder dan file di ./styles/sass/main.scss
+# Buat folder dan file di ./styles/sass/base/index.scss
+# Update postcss.config.js
+
+# Install postcss plugins
+npm install postcss-import cssnano postcss-plugin
+
+# Data fetching https://jsonplaceholder.typicode.com/posts
+npm install axios
+
+# Edit pages/_app.js
+# Jalankan script
+npm run dev
+```
