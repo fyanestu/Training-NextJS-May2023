@@ -1,1 +1,37 @@
 @import "base/index";
+@import "utilities/variables";
+
+.text {
+  &-primary {
+    color: $color-cyan;
+  }
+  &-warning {
+    color: $color-orange;
+  }
+  &-danger {
+    color: $color-red;
+  }
+}
+
+.app-card {
+  @extend %card-styles;
+}
+
+%style-pattern {
+  background-color: red;
+  padding: 20px;
+  width: 200px;
+}
+
+%card-styles {
+  .app {
+    &-card {
+      @extend %style-pattern;
+
+      &-img {
+        width: 100px;
+        object-fit: contain;
+      }
+    }
+  }
+}

@@ -1,14 +1,34 @@
+import Card from "@app/src/components/Card";
 import axios from "axios";
 
 export default function index(props) {
   // console.log(props);
   return (
     <div className="h-screen w-full bg-white bg-fixed mx-auto max-w-[900px]">
-      <h1>Home</h1>
+      <h1 className="text-primary">Home</h1>
+      <div>
+        <Card
+          id={1}
+          title={"Test Title"}
+          thumbnail={"/logo-bank-mega.png"}
+          description={"Ini test description"}
+        />
+        <Card
+          id={2}
+          title={"Test Title 2"}
+          thumbnail={"/logo-bank-mega-syariah.png"}
+          description={"Ini test description syariah"}
+        >
+          <div>Coba children</div>
+        </Card>
+      </div>
       <div>
         {props.data.map((item) => {
           return (
-            <div className={"text-black bg-gray-100 rounded-xl mb-4 p-4"}>
+            <div
+              key={item.id}
+              className={"text-black bg-gray-100 rounded-xl mb-4 p-4"}
+            >
               <p>ID: {item.id}</p>
               <pre>{JSON.stringify(item, null, 2)}</pre>
             </div>

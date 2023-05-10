@@ -81,3 +81,13 @@ npm install axios
 # Jalankan script
 npm run dev
 ```
+
+## Day 2 - Props, Components, JS Docs, SASS, BEM (Block Element Modifier) SASS Syntax
+
+```sh
+npm install prop-types
+
+# Belajar SASS Variable
+# Belajar SASS Nested
+# Belajar SASS Mixin
+```
