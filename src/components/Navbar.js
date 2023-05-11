@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 /**
@@ -18,9 +19,12 @@ export default function Navbar(props) {
           <nav>
             <ul className="flex items-center gap-4">
               <li>
-                <a href="/">Home</a>
+                <a href="/" className={"text-black"}>
+                  Home
+                </a>
               </li>
-              <li>
+              <li className={"text-black"} style={{ margin: 10 }}>
+                <Link href={"/about"}>about</Link>
                 <a href="/about">About</a>
               </li>
             </ul>

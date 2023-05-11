@@ -91,3 +91,11 @@ npm install prop-types
 # Belajar SASS Nested
 # Belajar SASS Mixin
 ```
+
+## Day 3 - Next API, validasi API, Next Auth
+
+```sh
+npm install next-connect
+npm install joi@17.7.1  next-joi@2.2.1
+npm install next-auth
+```

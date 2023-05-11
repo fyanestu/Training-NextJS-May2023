@@ -29,10 +29,7 @@ handler
         .catch((err) => {
           return [];
         });
-      return res.json({
-        message: "OK",
-        data: response,
-      });
+      return res.json(response);
     } catch (err) {
       res.statusCode(500);
       return res.json({
