@@ -99,3 +99,17 @@ npm install next-connect
 npm install joi@17.7.1  next-joi@2.2.1
 npm install next-auth
 ```
+
+## Day 4 - Prisma
+
+```sh
+npm install prisma
+
+# Test command
+npx prisma
+
+npx prisma init
+
+# Edit file di ./prisma/schema.prisma
+npx prisma migrate dev
+```
